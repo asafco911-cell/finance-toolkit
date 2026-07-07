@@ -1,0 +1,69 @@
+{
+    "results": [
+        {
+            "ticker": "AAPL",
+            "pe": 28,
+            "verdict": "Fair"
+        },
+        {
+            "ticker": "NVDA",
+            "pe": 45,
+            "verdict": "Expensive"
+        },
+        {
+            "ticker": "KO",
+            "pe": 12,
+            "verdict": "Cheap"
+        },
+        {
+            "ticker": "TSLA",
+            "pe": 60,
+            "verdict": "Expensive"
+        },
+        {
+            "ticker": "PGR",
+            "pe": 12,
+            "verdict": "Cheap"
+        },
+        {
+            "ticker": "FOUR",
+            "pe": 38,
+            "verdict": "Expensive"
+        },
+        {
+            "ticker": "AMD",
+            "pe": 97,
+            "verdict": "Expensive"
+        },
+        {
+            "ticker": "CAMT",
+            "pe": 133,
+            "verdict": "Expensive"
+        },
+        {
+            "ticker": "CRM",
+            "pe": 18,
+            "verdict": "Fair"
+        },
+        {
+            "ticker": "MELI",
+            "pe": 21,
+            "verdict": "Fair"
+        },
+        {
+            "ticker": "ADBE",
+            "pe": 11,
+            "verdict": "Cheap"
+        },
+        {
+            "ticker": "MSFT",
+            "pe": 23,
+            "verdict": "Fair"
+        }
+    ],
+    "summary": {
+        "cheap": 3,
+        "fair": 4,
+        "expensive": 5
+    }
+}

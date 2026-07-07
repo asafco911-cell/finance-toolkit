@@ -1,0 +1,14 @@
+ [ 
+    {"ticker": "AAPL", "pe": 28},
+    {"ticker": "NVDA", "pe": 45},
+    {"ticker": "KO", "pe": 12},
+    {"ticker": "TSLA","pe": 60},
+    {"ticker": "PGR", "pe": 12},
+    {"ticker": "FOUR", "pe": 38},
+    {"ticker": "AMD", "pe": 97},
+    {"ticker": "CAMT","pe": 133},
+    {"ticker": "CRM", "pe": 18},
+    {"ticker": "MELI","pe": 21},
+    {"ticker": "ADBE","pe": 11},
+    {"ticker": "MSFT", "pe": 23}
+]

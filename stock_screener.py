@@ -12,7 +12,7 @@ stocks = [
     {"ticker": "ADBE","pe": 11},
     {"ticker": "MSFT", "pe": 23}
 ]
-def classify (pe):
+def classify(pe):
     if pe < 15:
         return "cheap"
     elif pe <  30:
