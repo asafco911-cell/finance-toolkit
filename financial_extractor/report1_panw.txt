@@ -1,0 +1,14 @@
+Palo Alto Networks (NASDAQ: PANW), the global cybersecurity leader, announced today financial results for its fiscal third quarter 2026, ended April 30, 2026.
+
+"Q3 was a standout quarter for Palo Alto Networks, with accelerating organic bookings growth as customers turn to us to secure their AI deployments at scale," said Nikesh Arora, chairman and chief executive officer of Palo Alto Networks. "The latest advancements at the AI frontier have increased the level of urgency around cybersecurity, and redefined the shape of the industry for the coming years."
+
+"Our Q3 results reflect strong growth across each of our platforms as we scale. We are executing ahead of our M&A integration plans and improving profitability across our businesses, which keeps us firmly on track to achieve 40% adjusted free cash flow margin in FY28," said Dipak Golechha, chief financial officer of Palo Alto Networks.
+
+Third Quarter Fiscal 2026 Financial Highlights
+
+Total revenue for the fiscal third quarter 2026 grew 31% year over year to $3.0 billion. This includes $388 million from CyberArk and Chronosphere.
+Next-Generation Security ARR for the fiscal third quarter 2026 grew 60% year over year to $8.1 billion. This includes $1.6 billion in NGS ARR from CyberArk and Chronosphere.
+Remaining performance obligation grew 36% year over year to $18.4 billion. This includes $1.8 billion from CyberArk and Chronosphere.
+GAAP operating loss for the fiscal third quarter 2026 was $183 million, compared with GAAP operating income of $219 million, for the fiscal third quarter 2025. Non-GAAP operating income for the fiscal third quarter 2026 was $814 million, compared with non-GAAP operating income of $627 million for the fiscal third quarter 2025. A reconciliation between GAAP and non-GAAP information is contained in the tables below.
+GAAP net loss for the fiscal third quarter 2026 was $177 million, or ($0.22) per diluted share, compared with GAAP net income of $262 million, or $0.37 per diluted share, for the fiscal third quarter 2025. Non-GAAP net income for the fiscal third quarter 2026 was $684 million, or $0.85 per diluted share, compared with non-GAAP net income of $561 million, or $0.80 per diluted share, for the fiscal third quarter 2025. A reconciliation between GAAP and non-GAAP information is contained in the tables below.
+Net cash provided by operating activities for the fiscal third quarter 2026 was $871 million, compared with net cash provided by operating activities of $628 million, for the fiscal third quarter 2025. Adjusted free cash flow for fiscal third quarter 2026 was $910 million, compared with adjusted free cash flow of $578 million, for the fiscal third quarter 2025. Trailing 12-month adjusted free cash flow margin of 38.5% was up 430 basis points year over year. A reconciliation between GAAP and non-GAAP information is contained in the tables below.
