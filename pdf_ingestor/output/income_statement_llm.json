@@ -1,0 +1,122 @@
+[
+    {
+        "line_item": "Revenue",
+        "year_2023": "37,281",
+        "year_2024": "43,978",
+        "year_2025": "52,017"
+    },
+    {
+        "line_item": "Cost of revenue, exclusive of depreciation and amortization shown separately below",
+        "year_2023": "22,457",
+        "year_2024": "26,651",
+        "year_2025": "31,338"
+    },
+    {
+        "line_item": "Operations and support",
+        "year_2023": "2,689",
+        "year_2024": "2,732",
+        "year_2025": "2,854"
+    },
+    {
+        "line_item": "Sales and marketing",
+        "year_2023": "4,356",
+        "year_2024": "4,337",
+        "year_2025": "4,898"
+    },
+    {
+        "line_item": "Research and development",
+        "year_2023": "3,164",
+        "year_2024": "3,109",
+        "year_2025": "3,402"
+    },
+    {
+        "line_item": "General and administrative",
+        "year_2023": "2,682",
+        "year_2024": "3,639",
+        "year_2025": "3,241"
+    },
+    {
+        "line_item": "Depreciation and amortization",
+        "year_2023": "823",
+        "year_2024": "711",
+        "year_2025": "719"
+    },
+    {
+        "line_item": "Total costs and expenses",
+        "year_2023": "36,171",
+        "year_2024": "41,179",
+        "year_2025": "46,452"
+    },
+    {
+        "line_item": "Income from operations",
+        "year_2023": "1,110",
+        "year_2024": "2,799",
+        "year_2025": "5,565"
+    },
+    {
+        "line_item": "Interest expense",
+        "year_2023": "-633",
+        "year_2024": "-523",
+        "year_2025": "-440"
+    },
+    {
+        "line_item": "Interest income",
+        "year_2023": "484",
+        "year_2024": "721",
+        "year_2025": "743"
+    },
+    {
+        "line_item": "Other income (expense), net",
+        "year_2023": "1,360",
+        "year_2024": "1,128",
+        "year_2025": "-68"
+    },
+    {
+        "line_item": "Income before income taxes and income (loss) from equity method investments",
+        "year_2023": "2,321",
+        "year_2024": "4,125",
+        "year_2025": "5,800"
+    },
+    {
+        "line_item": "Provision for (benefit from) income taxes",
+        "year_2023": "213",
+        "year_2024": "-5,758",
+        "year_2025": "-4,346"
+    },
+    {
+        "line_item": "Income (loss) from equity method investments",
+        "year_2023": "48",
+        "year_2024": "-38",
+        "year_2025": "-53"
+    },
+    {
+        "line_item": "Net income including non-controlling interests",
+        "year_2023": "2,156",
+        "year_2024": "9,845",
+        "year_2025": "10,093"
+    },
+    {
+        "line_item": "Less: net income (loss) attributable to non-controlling interests, net of tax",
+        "year_2023": "269",
+        "year_2024": "-11",
+        "year_2025": "40"
+    },
+    {
+        "line_item": "Net income attributable to Uber Technologies, Inc.",
+        "year_2023": "1,887",
+        "year_2024": "9,856",
+        "year_2025": "10,053"
+    },
+    {
+        "line_item": "Net income per share attributable to Uber Technologies, Inc. common stockholders - Basic",
+        "year_2023": "0.93",
+        "year_2024": "4.71",
+        "year_2025": "4.82"
+    },
+    {
+        "line_item": "Net income per share attributable to Uber Technologies, Inc. common stockholders - Diluted",
+        "year_2023": "0.87",
+        "year_2024": "4.56",
+        "year_2025": "4.73"
+    }
+]
