@@ -41,3 +41,6 @@ Thumbs.db
 
 # PDF source files (large, not needed in repo)
 *.pdf
+
+__pycache__/
+*.pyc 
