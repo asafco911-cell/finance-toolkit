@@ -10,7 +10,10 @@ from schema import RAGAnswer
 load_dotenv()
 client_anthropic = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
-with open("chunks.json", "r", encoding="utf-8") as file:
+BASE_DIR = os.path.dirname(__file__)
+CHUNKS_PATH = os.path.join(BASE_DIR, "chunks.json")
+
+with open(CHUNKS_PATH, "r", encoding="utf-8") as file:
     chunks = json.load(file)
 
 print(f"Loaded {len(chunks)} chunks")
@@ -88,13 +91,14 @@ def generate_answer(system_prompt, user_prompt):
 
 # ---------- Run ----------
 
-question = "What was the revenue growth?"
-retrieved_chunks = retrieve(question, n_results=3)
-user_prompt = build_user_prompt(question, retrieved_chunks)
+if __name__ == "__main__":
+    question = "What was the revenue growth?"
+    retrieved_chunks = retrieve(question, n_results=3)
+    user_prompt = build_user_prompt(question, retrieved_chunks)
 
-result = generate_answer(SYSTEM_PROMPT, user_prompt)
+    result = generate_answer(SYSTEM_PROMPT, user_prompt)
 
-print(f"\n=== Question: {question} ===")
-print(f"Found: {result.found}")
-print(f"Answer: {result.answer}")
-print(f"Sources: {result.sources}")
+    print(f"\n=== Question: {question} ===")
+    print(f"Found: {result.found}")
+    print(f"Answer: {result.answer}")
+    print(f"Sources: {result.sources}")
