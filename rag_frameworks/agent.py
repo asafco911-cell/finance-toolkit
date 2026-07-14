@@ -5,25 +5,24 @@ from dotenv import load_dotenv
 from anthropic import Anthropic
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "rag_pipeline"))
-from rag_pipeline import retrieve
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "security"))
+
+from rag_pipeline import secure_retrieve
+from safe_calculator import safe_calculate
 
 load_dotenv()
 client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
 
-# ---------- The actual tool implementations (plain Python) ----------
+# ---------- Tool implementations ----------
 
 def search_report(query: str) -> str:
-    chunks = retrieve(query, n_results=3)
+    chunks = secure_retrieve(query, n_results=3)
     return "\n\n".join(chunks)
 
 
 def calculator(expression: str) -> str:
-    try:
-        result = eval(expression, {"__builtins__": {}}, {})
-        return str(result)
-    except Exception as e:
-        return f"Error: {e}"
+    return safe_calculate(expression)
 
 
 TOOL_FUNCTIONS = {
@@ -57,14 +56,15 @@ TOOLS = [
         "name": "calculator",
         "description": (
             "Evaluate a mathematical expression. Use this for ANY arithmetic. "
-            "Never compute in your head."
+            "Never compute in your head. Only plain arithmetic is supported "
+            "(+, -, *, /, **)."
         ),
         "input_schema": {
             "type": "object",
             "properties": {
                 "expression": {
                     "type": "string",
-                    "description": "A Python arithmetic expression, e.g. '10100000000 / 2100000000'"
+                    "description": "A plain arithmetic expression, e.g. '10053 / 2100'"
                 }
             },
             "required": ["expression"]
@@ -82,6 +82,7 @@ Rules:
   exact sentence it came from, verbatim, before using it. If you cannot find the
   figure stated explicitly in the retrieved text, say so instead of inferring it.
 - State clearly which figures you retrieved, what you quoted, and what you calculated."""
+
 
 # ---------- The Agent Loop ----------
 
@@ -101,11 +102,9 @@ def run_agent(question, max_iterations=5):
 
         print(f"[stop_reason] {response.stop_reason}")
 
-        # Claude is done — return the final text
         if response.stop_reason == "end_turn":
             return response.content[0].text
 
-        # Claude wants to use tool(s)
         if response.stop_reason == "tool_use":
             messages.append({"role": "assistant", "content": response.content})
 

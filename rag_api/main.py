@@ -2,11 +2,13 @@ import sys
 import os
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "rag_pipeline"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "security"))
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
 from pydantic import BaseModel
-from rag_pipeline import retrieve, build_user_prompt, generate_answer, SYSTEM_PROMPT
+from rag_pipeline import secure_retrieve, build_user_prompt, generate_answer, SYSTEM_PROMPT
 from schema import RAGAnswer
+from auth import verify_api_key
 
 app = FastAPI()
 
@@ -20,9 +22,9 @@ class AskRequest(BaseModel):
     question: str
 
 
-@app.post("/ask", response_model=RAGAnswer)
+@app.post("/ask", response_model=RAGAnswer, dependencies=[Depends(verify_api_key)])
 def ask(request: AskRequest):
-    retrieved_chunks = retrieve(request.question, n_results=3)
+    retrieved_chunks = secure_retrieve(request.question, n_results=3)
     user_prompt = build_user_prompt(request.question, retrieved_chunks)
     result = generate_answer(SYSTEM_PROMPT, user_prompt)
     return result
