@@ -1,0 +1,24 @@
+# Core
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# LLM APIs
+anthropic>=0.40.0
+openai>=1.50.0
+
+# RAG
+chromadb>=0.5.0
+pdfplumber>=0.11.0
+
+# API layer
+fastapi>=0.115.0
+uvicorn>=0.32.0
+
+# Frameworks (Chapter 10)
+llama-index>=0.12.0
+llama-index-llms-anthropic>=0.5.0
+llama-index-embeddings-huggingface>=0.4.0
+
+# Distribution (Chapter 12)
+deepl>=1.19.0
+twilio>=9.0.0
