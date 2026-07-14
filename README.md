@@ -177,7 +177,8 @@ Each project builds on the last. The capstone is the ⭐ chain.
 | 10 | [`local_rag/`](local_rag/) | 11 | **Ollama on-prem** + validators that catch its hallucinations |
 | 11 | [`distribution_pipeline/`](distribution_pipeline/) | 12 | Webhook → RAG → DeepL → **WhatsApp**, async |
 | 12 | ⭐ [`security/`](security/) | 13 | **Prompt injection, auth, safe eval** |
-| 13 | [`docs/`](docs/) | 1–13 | 13 reference documents — one per chapter |
+| 13 | ⭐ [`whatsapp_bot/`](whatsapp_bot/) | Bonus | **Bidirectional WhatsApp RAG** — Hebrew in, Hebrew out, with Twilio signature verification |
+| 14 | [`docs/`](docs/) | 1–13 | 13 reference documents — one per chapter |
 
 ### Selected findings from the journey
 
